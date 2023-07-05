@@ -1,0 +1,373 @@
+/* General Applied Global Properties*/
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+    background-color: #F5F2F2;
+}
+
+p{
+    margin: 0px;
+}
+
+.navContainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+/* Header/Navbar */
+header{
+    background-color: #F38108;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    min-height: 70px;
+    border-bottom: 10px solid #CB700F;
+}
+
+header a{
+    color: #D31515;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.5s, text-decoration 1.5s;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #navMessage{
+    float: left;
+}
+
+header #navMessage h1{
+    margin: 0;
+    color: red;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #000;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #F4BCBC;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer{
+    bottom: 0px;
+    margin-top: 100px;
+    border-top: 5px solid #CB700F;
+    display: flex;
+    align-items: center;
+    background-color: #F38108;
+    height: 80px;
+    width: 100%;
+}
+
+footer .footerMessage{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+}
+
+.footerMessage p{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+
+}
+
+/* Main Section for index.html*/
+#bannerImage{
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+#bannerImage img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#boxes{
+    margin-top: 40px;
+}
+
+#boxes .boxContainer{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+#boxes .boxContainer .box{
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .boxContainer .box p{
+    height: 100%;
+    width: 100%;
+}
+
+#boxes .circle{
+    margin: auto;
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #000;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* Main Section for aboutMe.html */
+#aboutMain{
+    margin-top: 100px;
+}
+
+.aboutContainer{
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+.aboutContainer div{
+    background-color: #000;
+    color: orange;
+    padding: 15px 15px 25px 15px;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.aboutContainer p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 10px solid black;
+}
+
+.aboutContainer h3{
+    margin: 0;
+    text-align: center;
+}
+
+/* Main Section for icons.html */
+#iconsMain{
+    text-align: center;
+    margin: 0;
+}
+
+#topMessage{
+    width: 80%;
+    margin: auto;
+}
+
+#topMessage div{
+    margin: 10px 0 10px 0;
+}
+
+#topMessage div a{
+    color: #D26CF2;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.5s;
+}
+
+#topMessage div h2{
+    font-weight: bold;
+}
+
+#topMessage div p{
+    font-size: 1.5rem;
+}
+
+#iconsMain #boxes .boxContainer .box{
+    margin: 10px;
+    border: 5px solid black;
+    transition: 0.3s;
+}
+
+#topMessage div a:hover{
+    color: #BD00F8;
+    text-decoration: underline;
+}
+
+#iconsMain #boxes .boxContainer .box:hover{
+    background-color: #D2CECE;
+}
+
+/* Main Section for triangle.html */
+#trianglesMain{
+    margin-top: 50px;
+    width: 100%;
+    height: calc(fit-content + 400px);
+}
+.information{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+.information ul{
+    list-style: none;
+    text-align: center;
+}
+.information ul li:nth-child(2){
+    color: blue;
+}
+.information ul li:nth-child(3){
+    color: orange;
+}
+.emphasis{
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+.triangleInputs{
+    position: relative;
+    width: 480px;
+    height: 390px;
+    margin: auto;
+    margin-bottom: 35px;
+    background-image: url(images/triangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+}
+.userInput{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.userInput input{
+    position: absolute;
+    width: 70px;
+}
+.sides{
+    border-bottom: 5px solid blue;
+    border-radius: 7px;
+}
+.angles{
+    border-bottom: 5px solid orange;
+    border-radius: 7px;
+}
+#side_a{
+    right: 15%;
+    top: 30%;
+}
+#side_b{
+    left: 15%;
+    top: 30%;
+}
+#side_c{
+    right: 43%;
+    bottom: 7%;
+}
+#angleA{
+    left: 13%;
+    bottom: 16%;
+}
+#angleB{
+    right: 13%;
+    bottom: 16%;
+}
+#angleC{
+    top: 26%;
+    right: 43%;
+}
+.functionButtons{
+    width: fit-content;
+    position: absolute;
+    bottom: 0px;
+    right: 36%;
+}
+#errorMessage{
+    width: fit-content;
+    margin: auto;
+    color: #DB0909;
+    font-weight: bold;
+}
+#possible1, #possible2{
+    display: none;
+    font-weight: bold;
+    color: #7478FD;
+}
+#triangleAnswers{
+    display: none;
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-bottom: 15px;
+}
+#triangleAnswers p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+#triangleAnswers2{
+    display: none;
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: 15px;
+}
+#triangleAnswers2 p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsive Area */
+@media screen and (max-width: 850px){
+    
+.navContainer a{
+    font-size: 13px;
+}
+#boxes .boxContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#boxes .boxContainer .box{
+    width: 60%;
+    padding: 20px;
+}
+}

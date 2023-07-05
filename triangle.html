@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap Stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--My Stuff-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Triangle Calculator</title>
+    </head>
+
+    <header>
+        <div class="navContainer">
+            <div id="navMessage">
+                <h1><span class="highlight">My</span> Webpage</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li class ="current"><a href="triangle.html">Triangle Calculator</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=UcCHRW8G9yY" target ="_blank">Random Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="trianglesMain">
+        <div class="information">
+            <ul>
+                <li>This triangle calculator is able to find the missing sides of any triangle when given <span class="emphasis">3</span> values with at least <span class="emphasis">1</span> value being a side length.</li>
+                <li>The blue inputs are where the <span class="emphasis">side lengths</span> are entered.</li>
+                <li>The orange inputs are where the <span class="emphasis">angles</span> are entered.</li>
+            </ul>
+        </div>
+        <section class="triangleInputs">
+            <div class ="userInput">
+                <input autocomplete="off" id="side_a" class ="sides" type="text" placeholder="Side a">
+                <input autocomplete="off" id="side_b" class ="sides" type="text" placeholder="Side b">
+                <input autocomplete="off" id="side_c" class ="sides" type="text" placeholder="Side c">
+
+                <input autocomplete="off" id="angleA" class ="angles" type="text" placeholder="Angle A">
+                <input autocomplete="off" id="angleB" class ="angles" type="text" placeholder="Angle B">
+                <input autocomplete="off" id="angleC" class ="angles" type="text" placeholder="Angle C">
+            </div>
+                <div class="functionButtons">
+                    <button onclick="calculateTriangle()">Calculate</button>
+                    <button onclick="clearInputs()">Clear</button>
+                </div>
+        </section>
+        <h4 id="errorMessage"></h4>
+        <section id="triangleAnswers">
+            <h4 id="possible1">Possible Triangle 1</h4>
+            <p id="sideAnswer_a"></p>
+            <p id="sideAnswer_b"></p>
+            <p id="sideAnswer_c"></p>
+            <br>
+            <p id="solutionA"></p>
+            <p id="solutionB"></p>
+            <p id="solutionC"></p>
+        </section>
+        <section id="triangleAnswers2">
+            <h4 id="possible2">Possible Triangle 2</h4>
+            <p id="sideAnswer_a2"></p>
+            <p id="sideAnswer_b2"></p>
+            <p id="sideAnswer_c2"></p>
+            <br>
+            <p id="solutionA2"></p>
+            <p id="solutionB2"></p>
+            <p id="solutionC2"></p>
+        </section>
+    </main>
+    <footer>
+        <section class="footerMessage">
+            <p>Copyright&copy Me</p>
+        </section>
+    </footer>
+    <script type="text/javascript" src="Javascript/triangle.js"></script>
+</html>
